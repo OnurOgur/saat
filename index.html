@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+<main class="bg-secondary" style="height: 100vh;color:green;line-height:3.5">
+  <div class=" center m-auto " style="text-align: center; padding-top:100px">
+    <h1 class="display-5" style="padding-top:10px; font-weight:600">Merhaba, <span id="demo2"></span>Hoş Geldin!</h1>
+    <h1 class="display-5" style="padding-top:10px;font-weight:600" id="saat"></h1>
+    <p style="padding-top:10px" id="demo"></p>
+    <h1 class="display-5" style="font-weight:600">tarihinde <span style="font-weight:700">Kodluyoruz Frontend Web Development <br>
+    Patikası</span> 'nın Javascript bölümü 1. Ödevindesiniz.</h1>
+    </div>
+</main>  
+    <script>
+    setInterval(oltimer, 1000);
+    function oltimer(){
+        var timer = new Date();
+        let saatt = timer.getHours();
+        let minute = timer.getMinutes();
+        let second = timer.getSeconds();
+    
+        document.querySelector("#saat").innerHTML = saatt + ": " + minute + ": " + second;
+    }
+    var ani = prompt("Please write your name:");
+    document.querySelector("#demo1").innerHTML = `${ani}`;
+    </script>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
+    
